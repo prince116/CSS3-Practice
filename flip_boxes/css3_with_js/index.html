@@ -57,21 +57,6 @@
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <script>
-        var doing = false;
-        $(function(){
-            $('.card').click(function(event){
-                
-                var $th = $(this);
-                if($th.hasClass('processing'))
-                    return;
-                $th.addClass('processing');
-                // normal code to run
-                $(this).toggleClass('flipped');
-                // then when done remove the class
-                $th.removeClass('processing');
-            })
-        });
-        </script>
+        <script src="app.js"></script>
     </body>
 </html>
